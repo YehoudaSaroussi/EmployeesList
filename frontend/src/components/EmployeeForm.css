@@ -1,0 +1,29 @@
+.employee-form {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.employee-form-title {
+  color: #4caf50;
+  margin-bottom: 16px;
+}
+
+.employee-form-group {
+  margin-bottom: 8px;
+}
+
+.employee-form-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.employee-form-actions {
+  display: flex;
+  justify-content: space-between;
+}

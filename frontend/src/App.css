@@ -1,0 +1,35 @@
+.app-container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.app-title {
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 24px;
+}
+
+.app-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-error {
+  color: red;
+  margin-bottom: 16px;
+}
+
+.app-loading {
+  text-align: center;
+}
+
+.app-no-data {
+  text-align: center;
+  margin-top: 16px;
+}

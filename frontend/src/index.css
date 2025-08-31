@@ -1,0 +1,36 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+input {
+  margin-left: 4px;
+  margin-right: 8px;
+  padding: 2px 6px;
+}
+
+button {
+  margin-right: 6px;
+  padding: 2px 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background: #f1f1f1;
+}

@@ -1,0 +1,35 @@
+# Node.js dependencies
+frontend/node_modules/
+
+# Maven build artifacts
+target/
+
+# Logs
+*.log
+*.log.*
+
+# IntelliJ IDEA
+.idea/
+
+# VS Code
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# MySQL dumps or sensitive files
+*.sql
+src/main/resources/application.properties
+
+# Temporary files
+*.tmp
+*.swp
+
+# npm debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output of npm run build (if applicable)
+frontend/dist/
