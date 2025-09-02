@@ -122,11 +122,3 @@ The database is pre-populated with the following employees:
 - **Database Connection Issues**: Ensure MySQL is running and the credentials in `application.properties` are correct.
 - **Port Conflicts**: Check if ports `8080` (backend) and `5173` (frontend) are available.
 
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-### Acknowledgments
-
-- Inspired by industry best practices for full-stack development.
-- Special thanks to the open-source community for tools and libraries.
