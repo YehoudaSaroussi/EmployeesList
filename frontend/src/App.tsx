@@ -6,10 +6,10 @@ import {
   createEmployee,
   updateEmployee
 } from './api';
-import EmployeeTable from './components/EmployeeTable';
-import EmployeeForm from './components/EmployeeForm';
+import EmployeeTable from './Features/EmployeeTable/EmployeeTable';
+import EmployeeForm from './Features/EmployeeForm/EmployeeForm';
 import EmailSearch from './components/EmailSearch';
-import './App.css'; // Import the CSS file for styling
+import './App.css';
 
 const App: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);

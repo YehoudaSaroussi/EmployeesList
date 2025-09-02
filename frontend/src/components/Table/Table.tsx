@@ -1,5 +1,5 @@
 import React from 'react';
-import './Table.css'; // Import the CSS file for styling
+import './Table.css';
 
 interface TableProps {
   headers: string[];

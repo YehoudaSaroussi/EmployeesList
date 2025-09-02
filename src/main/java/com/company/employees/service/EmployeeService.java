@@ -30,9 +30,6 @@ public class EmployeeService {
 
     @Transactional
     public EmployeeDTO create(EmployeeCreateUpdateDTO dto) {
-        if (dto.id() != null) {
-            throw new IllegalArgumentException("ID must not be provided when creating a new employee");
-        }
         if (repo.existsByEmail(dto.email())) {
             throw new ConflictException("Email already exists");
         }

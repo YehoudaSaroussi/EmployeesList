@@ -1,8 +1,8 @@
 import React from 'react';
-import { Employee } from '../types';
-import Table from './Table';
-import Button from './Button';
-import './EmployeeTable.css'; // Import the CSS file for styling
+import { Employee } from '../../types';
+import Table from '../../components/Table/Table';
+import Button from '../../components/Button/Button';
+import './EmployeeTable.css';
 
 interface Props {
   employees: Employee[];

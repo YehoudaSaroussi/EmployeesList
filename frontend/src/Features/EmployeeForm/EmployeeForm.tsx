@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { EmployeeInput } from '../types';
-import Button from './Button';
-import './EmployeeForm.css'; // Import the CSS file for styling
+import { EmployeeInput } from '../../types';
+import Button from '../../components/Button/Button';
+import './EmployeeForm.css';
 
 interface Props {
   initial?: (EmployeeInput & { id?: number }) | null;
@@ -78,7 +78,7 @@ const EmployeeForm: React.FC<Props> = ({ initial, onSubmit, onCancel, loading })
       </div>
       <div className="employee-form-actions">
         <Button type="submit" variant="primary" disabled={loading}>
-          {loading ? 'Adding...' : 'Add'}
+          {loading ? (initial ? 'Saving...' : 'Adding...') : initial ? 'Save' : 'Add'}
         </Button>
         {initial && (
           <Button type="button" variant="danger" onClick={onCancel}>
