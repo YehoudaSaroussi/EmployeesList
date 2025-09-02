@@ -1,4 +1,5 @@
 import React from 'react';
+import './Table.css'; // Import the CSS file for styling
 
 interface TableProps {
   headers: string[];
@@ -7,11 +8,11 @@ interface TableProps {
 
 const Table: React.FC<TableProps> = ({ headers, rows }) => {
   return (
-    <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 16 }}>
+    <table className="table">
       <thead>
-        <tr style={{ backgroundColor: '#4CAF50', color: '#fff' }}>
+        <tr className="table-header-row">
           {headers.map((header, index) => (
-            <th key={index} style={{ padding: 12, textAlign: 'left' }}>
+            <th key={index} className="table-header-cell">
               {header}
             </th>
           ))}
@@ -21,13 +22,10 @@ const Table: React.FC<TableProps> = ({ headers, rows }) => {
         {rows.map((row, rowIndex) => (
           <tr
             key={rowIndex}
-            style={{
-              backgroundColor: rowIndex % 2 === 0 ? '#f9f9f9' : '#fff',
-              borderBottom: '1px solid #ddd',
-            }}
+            className={`table-body-row ${rowIndex % 2 === 0 ? 'table-row-even' : 'table-row-odd'}`}
           >
             {row.map((cell, cellIndex) => (
-              <td key={cellIndex} style={{ padding: 12 }}>
+              <td key={cellIndex} className="table-body-cell">
                 {cell}
               </td>
             ))}

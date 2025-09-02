@@ -32,8 +32,19 @@ const EmployeeForm: React.FC<Props> = ({ initial, onSubmit, onCancel, loading })
   return (
     <form onSubmit={handleSubmit} className="employee-form">
       <h2 className="employee-form-title">{initial ? 'Edit Employee' : 'Add New Employee'}</h2>
+      {initial?.id && (
+        <div className="employee-form-group">
+          <label><strong>ID:</strong></label>
+          <input
+            type="text"
+            value={initial.id}
+            readOnly
+            className="employee-form-input"
+          />
+        </div>
+      )}
       <div className="employee-form-group">
-        <label>First Name:</label>
+        <label><strong>First Name:</strong></label>
         <input
           type="text"
           name="firstName"
@@ -44,7 +55,7 @@ const EmployeeForm: React.FC<Props> = ({ initial, onSubmit, onCancel, loading })
         />
       </div>
       <div className="employee-form-group">
-        <label>Last Name:</label>
+        <label><strong>Last Name:</strong></label>
         <input
           type="text"
           name="lastName"
@@ -55,7 +66,7 @@ const EmployeeForm: React.FC<Props> = ({ initial, onSubmit, onCancel, loading })
         />
       </div>
       <div className="employee-form-group">
-        <label>Email:</label>
+        <label><strong>Email:</strong></label>
         <input
           type="email"
           name="email"
@@ -67,7 +78,7 @@ const EmployeeForm: React.FC<Props> = ({ initial, onSubmit, onCancel, loading })
       </div>
       <div className="employee-form-actions">
         <Button type="submit" variant="primary" disabled={loading}>
-          {loading ? 'Saving...' : 'Save'}
+          {loading ? 'Adding...' : 'Add'}
         </Button>
         {initial && (
           <Button type="button" variant="danger" onClick={onCancel}>

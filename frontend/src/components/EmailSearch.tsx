@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 type Props = {
   onSearch: (email: string) => void;
@@ -17,7 +18,7 @@ const EmailSearch: React.FC<Props> = ({ onSearch, onReset, loading }) => {
   return (
     <form onSubmit={handleSubmit} style={{ marginBottom: 16 }}>
       <label>
-        Search by Email:
+        <strong>Search by Email:</strong>
         <input
           type="email"
           value={email}
@@ -26,8 +27,8 @@ const EmailSearch: React.FC<Props> = ({ onSearch, onReset, loading }) => {
           required
         />
       </label>
-      <button type="submit" disabled={loading}>Search</button>
-      <button type="button" onClick={onReset} disabled={loading}>Reset</button>
+      <Button type="submit" variant="yellow" disabled={loading}>Search</Button>
+      <Button type="button" variant="yellow" onClick={onReset} disabled={loading}>Reset</Button>
     </form>
   );
 };

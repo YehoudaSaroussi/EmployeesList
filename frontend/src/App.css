@@ -8,14 +8,14 @@
 
 .app-title {
   text-align: center;
-  color: #4caf50;
+  color: #26a6d0;
   margin-bottom: 24px;
 }
 
 .app-section {
   margin-bottom: 24px;
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: #e0f6ac;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

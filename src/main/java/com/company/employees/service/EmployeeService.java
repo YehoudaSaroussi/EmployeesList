@@ -30,6 +30,9 @@ public class EmployeeService {
 
     @Transactional
     public EmployeeDTO create(EmployeeCreateUpdateDTO dto) {
+        if (dto.id() != null) {
+            throw new IllegalArgumentException("ID must not be provided when creating a new employee");
+        }
         if (repo.existsByEmail(dto.email())) {
             throw new ConflictException("Email already exists");
         }
@@ -47,6 +50,9 @@ public class EmployeeService {
 
     @Transactional
     public EmployeeDTO update(Long id, EmployeeCreateUpdateDTO dto) {
+        if (!id.equals(dto.id())) {
+            throw new IllegalArgumentException("ID in the path and body must match");
+        }
         Employee emp = repo.findById(id)
                 .orElseThrow(() -> new NotFoundException("Employee not found"));
         if (!emp.getEmail().equals(dto.email()) && repo.existsByEmail(dto.email())) {

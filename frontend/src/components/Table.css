@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.table-header-row {
+  background-color: #4CAF50;
+  color: #2815f6ff;
+}
+
+.table-header-cell {
+  padding: 12px;
+  text-align: left;
+}
+
+.table-body-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row-even {
+  background-color: #f9f9f9;
+}
+
+.table-row-odd {
+  background-color: #fff;
+}
+
+.table-body-cell {
+  padding: 12px;
+}

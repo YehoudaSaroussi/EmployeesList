@@ -1,0 +1,16 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/companydb?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+# Disable Flyway to avoid the "Unsupported Database: MySQL 8.0" error from the bundled Flyway version.
+spring.flyway.enabled=false
+
+# Use Spring's SQL initializer to run the existing SQL files
+spring.sql.init.mode=always
+spring.sql.init.schema-locations=classpath:db/migration/V1__create_employees.sql
+spring.sql.init.data-locations=classpath:data.sql
+
+server.port=8080

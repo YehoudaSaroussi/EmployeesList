@@ -10,8 +10,9 @@ interface Props {
 }
 
 const EmployeeTable: React.FC<Props> = ({ employees, onEdit }) => {
-  const headers = ['First Name', 'Last Name', 'Email', 'Actions'];
+  const headers = ['ID', 'First Name', 'Last Name', 'Email', 'Actions'];
   const rows = employees.map((emp) => [
+    emp.id,
     emp.firstName,
     emp.lastName,
     emp.email,

@@ -8,6 +8,6 @@ export default defineConfig({
     open: true, // Automatically open the browser
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Prioritize TypeScript files
+    extensions: ['.ts', '.tsx'], // Prioritize TypeScript files
   },
 });
