@@ -1,6 +1,6 @@
 # Employees Management System
 
-The Employees Management System is a full-stack application designed to manage employee records. It allows users to perform CRUD (Create, Read, Update, Delete) operations on employee data, search employees by email, and view all employees in a tabular format. The project is built using a React frontend, a Spring Boot backend, and MySQL as the database.
+The Employees Management System is a full-stack application designed to manage employee records. It allows users to perform CRUD (Create, Read, Update) operations on employee data, search employees by email, and view all employees in a tabular format. The project is built using a React frontend, a Spring Boot backend, and MySQL as the database.
 
 ## Features
 
